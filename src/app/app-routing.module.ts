@@ -4,7 +4,7 @@ import { Http404Component } from './core/http404/http404.component';
 
 const routes: Routes = [
   {
-    path: 'profile',
+    path: '',
     loadChildren: () => import('./profile/profile.module').then(m => m.ProfileModule)
   },
   {
@@ -12,7 +12,7 @@ const routes: Routes = [
     loadChildren: () => import('./problems/problems.module').then(m => m.ProblemsModule)
   },
   {
-    path: '',
+    path: 'notfound',
     component: Http404Component 
   },
   {
